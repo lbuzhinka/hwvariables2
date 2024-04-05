@@ -33,7 +33,18 @@ public class Main {
         System.out.println("На каждого ученика рассчитано " + paperPerStudentAmount +
                 " листов бумаги");
         System.out.println("\nTask 4");
-        byte bottleProductionPer2minute = 16;
+        byte bottleProductionPerTwoMinutes = (byte) 16;
+        int bottleProductionPerOneMinute = bottleProductionPerTwoMinutes / 2;
+        int bottleProductionPerTwentyMinutes = bottleProductionPerOneMinute * 20;
+        System.out.println("За 20 минут машина произвела " + bottleProductionPerTwentyMinutes + " штук бутылок");
+        int minutesInOneDay = 60 * 24;
+        int productionPerOneDay = minutesInOneDay * bottleProductionPerOneMinute;
+        System.out.println("За сутки машина произвела " + productionPerOneDay + " штук бутылок");
+        int productionPerThreeDays = productionPerOneDay * 3;
+        System.out.println("За 3 суток машина произвела " + productionPerThreeDays + " штук бутылок");
+        int productionPerOneMonth = productionPerOneDay * 30;
+        System.out.println("За месяц машина произвела " + productionPerOneMonth + " штук бутылок");
+
 
 
 
